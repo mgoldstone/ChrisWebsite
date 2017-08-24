@@ -1,0 +1,203 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Christopher Robert Jones - sculpture</title>
+	<meta name="description" content="">
+</head>
+<body>
+	<div style="display:flex;flex-wrap:wrap;flex-direction:row;justify-content:flex-start;">
+		<div id="col1" style="display:flex;flex-direction:column;flex-basis:20%;">
+			<div class="fixed">
+				<div id="sitename">
+					<a href="home.html"><img src="img/nameclick.gif" width="250px"></a><br>
+				</div>
+		    	<div class="navigation">
+			    	<ul>
+						<li><a href="sculpture.html" class="nav-text-size"><img src="img/plainsculptureicon-point.png" height="35px"></a></li>
+						<li><a href="drawing.html" class="nav-text-size"><img src="img/plaindrawingicon-point.png" height="35px"></a></li>
+						<li><a href="about.html" class="nav-text-size"><img src="img/plainabouticon-point.png" height="35px"></a></li>
+						<li><a href="contact.html" class="nav-text-size"><img src="img/plaincontacticon-point.png" height="35px"></a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<div id="col2" style="display:flex;flex-direction:column;" class="flex-col-2">
+			<div class="main">
+
+<img src="img/sculptureicon.png" width="200px"><br><br>
+
+<!-- First slideshow -->
+<div id="saying-goodbye">
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <div class="numbertext">1 / 3</div>
+<div style="width:60%">
+    <img src="img/Chris_Jones_02.jpg" style="width:100%">
+</div>    
+  </div>
+
+  <div class="mySlides1">
+    <div class="numbertext">2 / 3</div>
+<div style="width:60%">
+    <img src="img/Chris_Jones_03.jpg" style="width:100%">
+</div>    
+  </div>
+
+  <div class="mySlides1">
+    <div class="numbertext">3 / 3</div>
+<div style="width:60%">
+    <img src="img/Chris_Jones_04.jpg" style="width:100%">
+</div>    
+  </div>
+
+  
+<div class="buttons">
+  <a class="prev" onclick="plusSlides(-1,1)">< prev </a>/
+  <a class="next" onclick="plusSlides(1,1)">next ></a> 
+</div>
+ 
+</div>
+<p class="caption">
+Saying Goodbye To The Old Ones, 2016<br>
+Wood, Plastic, Joint Compound, Oil Paint, Canvas<br>
+46"x 32"x 12"
+</p>
+</div>
+<br>
+
+<!-- Second slideshow -->
+<div id="saying-goodbye">
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <div class="numbertext">1 / 3</div>
+<div style="width:60%">
+    <img src="img/Chris_Jones_02.jpg" style="width:100%">
+</div>    
+  </div>
+
+  <div class="mySlides2">
+    <div class="numbertext">2 / 3</div>
+<div style="width:60%">
+    <img src="img/Chris_Jones_03.jpg" style="width:100%">
+</div>    
+  </div>
+
+  <div class="mySlides2">
+    <div class="numbertext">3 / 3</div>
+<div style="width:60%">
+    <img src="img/Chris_Jones_04.jpg" style="width:100%">
+</div>    
+  </div>
+
+  
+<div class="buttons">
+  <a class="prev" onclick="plusSlides(-1,2)">< prev </a>/
+  <a class="next" onclick="plusSlides(1,2)">next ></a> 
+</div>
+ 
+</div>
+<p class="caption">
+Saying Goodbye To The Old Ones, 2016<br>
+Wood, Plastic, Joint Compound, Oil Paint, Canvas<br>
+46"x 32"x 12"
+</p>
+</div>
+
+<!-- Third slideshow -->
+<div id="saying-goodbye">
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <div class="numbertext">1 / 3</div>
+<div style="width:60%">
+    <img src="img/Chris_Jones_02.jpg" style="width:100%">
+</div>    
+  </div>
+
+  <div class="mySlides3">
+    <div class="numbertext">2 / 3</div>
+<div style="width:60%">
+    <img src="img/Chris_Jones_03.jpg" style="width:100%">
+</div>    
+  </div>
+
+  <div class="mySlides3">
+    <div class="numbertext">3 / 3</div>
+<div style="width:60%">
+    <img src="img/Chris_Jones_04.jpg" style="width:100%">
+</div>    
+  </div>
+
+  
+<div class="buttons">
+  <a class="prev" onclick="plusSlides(-1,3)">< prev </a>/
+  <a class="next" onclick="plusSlides(1,3)">next ></a> 
+</div>
+ 
+</div>
+<p class="caption">
+Saying Goodbye To The Old Ones, 2016<br>
+Wood, Plastic, Joint Compound, Oil Paint, Canvas<br>
+46"x 32"x 12"
+</p>
+</div>
+
+
+<br>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+<div class="scrollicon">
+<img src="img/scrollicon.png" width="100px">
+</div>
+
+
+
+
+<script>
+var totalNumOfSlideshows = 3;
+var slideIndexArr = [];
+
+for(var i = 1; i <= totalNumOfSlideshows; i++) {
+	slideIndexArr[i - 1] = 1;
+	showSlides(slideIndexArr[i - 1],i);
+}
+
+function plusSlides(n,slideShowNum) {
+  showSlides(slideIndexArr[slideShowNum - 1] += n,slideShowNum);
+}
+
+function currentSlide(n,slideShowNum) {
+  showSlides(slideIndexArr[slideShowNum - 1] = n,slideShowNum);
+}
+
+function showSlides(slideIndex, slideShowNum) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides" + slideShowNum);
+
+  if (slideIndex > slides.length) {
+  	slideIndex = 1
+  }    
+  
+  if (slideIndex < 1) {
+  	slideIndex = slides.length
+  }
+  
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+  margin: 50px;
+  background-color: #fffec4;
+} 
+
+
+
+#sitename a:hover{
+
+}
+
+.navigation ul{
+  list-style:none;
+  padding-left:0;
+
+}
+
+.navigation ul li{
+padding-bottom: 30px;
+}
+
+.navigation ul li a:hover{
+  color:gray;
+}
+.navigation ul li a: selected{
+  color:gray;
+}
+
+.caption-main {
+  font-size:12px;
+}
+
+/* Copied from maggies site */
+/*
+    .fixed {
+      position: fixed;
+    }
+    .flex-col-2 {
+      	-ms-flex-preferred-size: 80%;
+    	flex-basis: 80%;
+    }
+    .single-img-width {
+    	width:60%;
+    }
+    .navigation{
+    padding-top: 20px;
+    }
+	.navigation ul li a{
+  		list-style:none;
+  		text-align: left;
+  		text-decoration: none;
+  		font-size: 18px;
+  		line-height: 55px;
+  		color: black;
+	}
+ 	#sitename{
+  		text-decoration: underline;
+  		font-size: 24px;
+	}
+
+	#sitename a{
+  		text-decoration: none;
+	}
+*/	
+
+#intro-pic{
+margin-left: 25%;
+}
+#intro-pic2{
+margin-left: 10%;
+}
+
+#intro-link{
+margin-left: 55%;
+font-size: 30px;
+color:#0000EE;
+}
+
+.main{
+padding-left:100px;
+}
+
+.scrollicon{
+position:fixed;
+right:20px;
+top:200px;
+}
+
+
+/* SLIDESHOW */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+}
+
+.buttons {
+position: absolute;
+top: 95%;
+left: 65%;
+}
+
+.caption {
+font-size: 13px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: blue;
+}
+
+
+.numbertext {
+  color: black;
+  font-size: 14px;
+  position: absolute;
+  top: 90%;
+  left: 65%;
+}
+
+
+/* The dots/bullets/indicators */
+/* 
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+ */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
